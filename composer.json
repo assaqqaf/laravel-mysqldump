@@ -1,0 +1,28 @@
+{
+    "name": "assaqqaf/mysql-dump",
+    "description": "Laravel Package to Dump mysql database data to storage folder",
+    "type": "Laravel 5 Package",
+    "keywords": ["laravel", "database", "backup"],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/config": "~5.1",
+        "illuminate/console": "~5.1",
+        "ifsnop/mysqldump-php": "~1.5"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdullah Mohammed",
+            "email": "abbdullah1@hotmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Assaqqaf\\Mysqldump\\": "src/"
+      }
+    },
+    "minimum-stability": "dev"
+}
