@@ -70,7 +70,7 @@ class MysqlDumpCommand extends Command {
         }
         // IF NECESSARY, YOU CAN ADD exec("sudo mysqldump..... if some there is a permission issue
         //$this->info("mysqldump -h " . $host . " -u " . $user . " -p " . $pass . " --no-create-info " . $name . " > " . $file);
-        exec("mysqldump -h " . $host . " -u " . $user . " -p" . $pass . " --no-create-info " . $database . " > " . $file);
+        //exec("mysqldump -h " . $host . " -u " . $user . " -p" . $pass . " --no-create-info " . $database . " > " . $file);
 
         $this->info("Dump file has been created at. " . $file . PHP_EOL);
 
