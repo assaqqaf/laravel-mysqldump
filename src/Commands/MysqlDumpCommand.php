@@ -45,7 +45,7 @@ class MysqlDumpCommand extends Command {
         $driver = config('database.default');
 
         if( $driver !== 'mysql'){
-            $this->error('Sorry the command support only MySql!');
+            $this->error('Sorry! The package support only MySql!');
             return false;
         }
 
@@ -54,10 +54,10 @@ class MysqlDumpCommand extends Command {
         $pass = config('database.connections.mysql.password');
         $database = config('database.connections.mysql.database');
 
-        $this->info('Database Name: '.$database . PHP_EOL);
-        $this->info('Database Host: '.$host . PHP_EOL);
-        $this->info('Database User: '.$user . PHP_EOL);
-        $this->info('Database Password: '.$pass . PHP_EOL);
+        $this->info('Database Metadata:' . $database . PHP_EOL);
+        $this->info('Database Name: '.$database);
+        $this->info('Database Host: '.$host);
+        $this->info('Database User: '.$user);
 
         $file = storage_path(). "/database/".time()."_dump.sql";
 
