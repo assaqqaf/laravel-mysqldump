@@ -12,4 +12,4 @@ before_script:
   - composer --prefer-source --dev install
 
 script:
-  - bin/phpunit
+  - /vendor/bin/phpunit
